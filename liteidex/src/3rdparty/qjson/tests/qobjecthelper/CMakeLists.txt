@@ -1,48 +1,60 @@
-##### Probably don't want to edit below this line #####
+cmake_minimum_required(VERSION 3.16)
+project(qobjecthelper VERSION 1.0 LANGUAGES C CXX)
 
-SET( QT_USE_QTTEST TRUE )
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-# Use it
-INCLUDE( ${QT_USE_FILE} )
+# Set up AUTOMOC and some sensible defaults for runtime execution
+# When using Qt 6.3, you can replace the code block below with
+# qt_standard_project_setup()
+set(CMAKE_AUTOMOC ON)
+include(GNUInstallDirs)
 
-INCLUDE(AddFileDependencies)
+find_package(QT NAMES Qt5 Qt6 REQUIRED COMPONENTS Core)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui)
 
-# Include the library include directories, and the current build directory (moc)
-INCLUDE_DIRECTORIES(
-  ../../include
-  ${CMAKE_CURRENT_BINARY_DIR}
+qt_add_executable(qobjecthelper WIN32 MACOSX_BUNDLE
+    person.cpp person.h
+    testqobjecthelper.cpp
+)
+target_include_directories(qobjecthelper PRIVATE
+    .
+    ../../include
 )
 
-SET (qjson_test_support_SRCS person.cpp)
-QT4_WRAP_CPP(qjson_test_support_MOC_SRCS person.h)
-
-ADD_LIBRARY (qjson_test_support STATIC ${qjson_test_support_SRCS}
-                                       ${qjson_test_support_MOC_SRCS})
-
-SET( UNIT_TESTS
-  testqobjecthelper
+target_compile_definitions(qobjecthelper PRIVATE
+    QMAKE_BUILD
 )
 
-# Build the tests
-FOREACH(test ${UNIT_TESTS})
-  MESSAGE(STATUS "Building ${test}")
-  QT4_WRAP_CPP(MOC_SOURCE ${test}.cpp)
-  ADD_EXECUTABLE(
-    ${test}
-    ${test}.cpp
-  )
+target_link_libraries(qobjecthelper PRIVATE
+    Qt::Core
+    Qt::Gui
+)
 
-  ADD_FILE_DEPENDENCIES(${test}.cpp ${MOC_SOURCE})
-  TARGET_LINK_LIBRARIES(
-    ${test}
-    ${QT_LIBRARIES}
-    qjson
-    qjson_test_support
-  )
-  if (QJSON_TEST_OUTPUT STREQUAL "xml")
-    # produce XML output
-    add_test( ${test} ${test} -xml -o ${test}.tml )
-  else (QJSON_TEST_OUTPUT STREQUAL "xml")
-    add_test( ${test} ${test} )
-  endif (QJSON_TEST_OUTPUT STREQUAL "xml")
-ENDFOREACH()
+if(WIN32)
+    target_link_libraries(qobjecthelper PRIVATE
+        # Remove: L../../lib
+        qjson0
+    )
+endif()
+
+if(MACOS)
+    target_link_libraries(qobjecthelper PRIVATE
+        "-framework qjson"
+    )
+endif()
+
+if(UNIX AND NOT MACOS)
+    target_link_libraries(qobjecthelper PRIVATE
+        # Remove: L../../lib
+        qjson
+    )
+endif()
+
+install(TARGETS qobjecthelper
+    BUNDLE DESTINATION .
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+# Consider using qt_generate_deploy_app_script() for app deployment if
+# the project can use Qt 6.3. In that case rerun qmake2cmake with
+# --min-qt-version=6.3.

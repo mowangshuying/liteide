@@ -36,3 +36,7 @@ liteidex/src/golang.org/
 
 #macosx
 .DS_Store
+
+#cmake
+CMakeLists.txt.user
+liteidex/build/

@@ -1,24 +1,42 @@
-##### Probably don't want to edit below this line #####
-
-# Use it
-INCLUDE( ${QT_USE_FILE} )
-
-INCLUDE(AddFileDependencies)
-
-# Include the library include directories, and the current build directory (moc)
-INCLUDE_DIRECTORIES(
-  ../../include
-  ${CMAKE_CURRENT_BINARY_DIR}
+qt_add_executable(cmdline_tester WIN32 MACOSX_BUNDLE
+    cmdline_tester.cpp
+    cmdlineparser.cpp
+)
+target_include_directories(cmdline_tester PRIVATE
+    .
+    ../../include
 )
 
-ADD_EXECUTABLE(
-  cmdline_tester
-  cmdline_tester.cpp
-  cmdlineparser.cpp
+target_link_libraries(cmdline_tester PRIVATE
+    Qt::Core
+    Qt::Gui
 )
 
-TARGET_LINK_LIBRARIES(
-  cmdline_tester
-  ${QT_LIBRARIES}
-  qjson
+if(WIN32)
+    target_link_libraries(cmdline_tester PRIVATE
+        # Remove: L../../lib
+        qjson0
+    )
+endif()
+
+if(MACOS)
+    target_link_libraries(cmdline_tester PRIVATE
+        "-framework qjson"
+    )
+endif()
+
+if(UNIX AND NOT MACOS)
+    target_link_libraries(cmdline_tester PRIVATE
+        # Remove: L../../lib
+        qjson
+    )
+endif()
+
+install(TARGETS cmdline_tester
+    BUNDLE DESTINATION .
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+
+# Consider using qt_generate_deploy_app_script() for app deployment if
+# the project can use Qt 6.3. In that case rerun qmake2cmake with
+# --min-qt-version=6.3.
