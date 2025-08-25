@@ -1,11 +1,11 @@
-qt_add_library(symboltreeview
+qt_add_library(symboltreeview STATIC
     symboltreeview.cpp symboltreeview.h
 )
 target_include_directories(symboltreeview PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(symboltreeview PUBLIC

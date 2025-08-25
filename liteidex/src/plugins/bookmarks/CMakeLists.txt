@@ -24,6 +24,7 @@ target_link_libraries(bookmarks PRIVATE
     Qt::Gui
     liteapi
     liteeditorapi
+    symboltreeview
 )
 
 
