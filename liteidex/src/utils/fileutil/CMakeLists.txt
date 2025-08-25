@@ -19,6 +19,7 @@ target_link_libraries(fileutil PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(MACOS)

@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -66,7 +66,8 @@ PackageBrowser::PackageBrowser(LiteApi::IApplication *app, QObject *parent) :
     m_hideStandard = false;
 
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    //layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
 
     m_model = new QStandardItemModel(this);
 

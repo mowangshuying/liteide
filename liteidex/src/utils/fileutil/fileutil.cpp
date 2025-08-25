@@ -30,6 +30,7 @@
 #include <QProcess>
 #include <QDesktopServices>
 #include <QDateTime>
+#include <QRegularExpression>
 #if QT_VERSION >= 0x050000
 #include <QStandardPaths>
 #endif
@@ -129,9 +130,9 @@ QMap<QString,QStringList> FileUtil::readFileContext(QIODevice *dev)
     foreach (QString line, list) {
         if (line.size() >= 1 && line.at(0) == '#')
             continue;
-        QStringList v = line.split(QRegExp("\\+="),qtSkipEmptyParts);
+        QStringList v = line.split(QRegularExpression("\\+="),qtSkipEmptyParts);
         if (v.count() == 1) {
-            v = line.split(QRegExp("="),qtSkipEmptyParts);
+            v = line.split(QRegularExpression("="),qtSkipEmptyParts);
             if (v.count() == 2) {
                 QStringList v2 = v.at(1).split(" ",qtSkipEmptyParts);
                 if (!v2.isEmpty()) {

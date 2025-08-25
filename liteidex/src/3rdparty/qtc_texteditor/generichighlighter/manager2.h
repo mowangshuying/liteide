@@ -47,7 +47,7 @@
 
 QT_BEGIN_NAMESPACE
 class QFileInfo;
-class QStringList;
+// class QStringList;
 class QIODevice;
 template <class> class QFutureInterface;
 template <class> class QSharedPointer;

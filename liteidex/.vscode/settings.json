@@ -9,5 +9,8 @@
     "files.autoGuessEncoding": true,
     "cmake.outputLogEncoding": "utf-8",
     "cmake.enableTraceLogging": true,
-    "cmake.sourceDirectory": "D:/liteide-Master/liteidex"
+    "cmake.sourceDirectory": "D:/liteide-Master/liteidex",
+    "files.associations": {
+        "algorithm": "cpp"
+    }
 }

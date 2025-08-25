@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -305,13 +305,15 @@ FindApiWidget::FindApiWidget(LiteApi::IApplication *app, QWidget *parent) :
     findBtn->setText(tr("Find"));
 
     QHBoxLayout *findLayout = new QHBoxLayout;
-    findLayout->setMargin(2);
+    //findLayout->setMargin(2);
+	findLayout->setContentsMargins(2, 2, 2, 2);
     findLayout->addWidget(m_findEdit);
     findLayout->addWidget(findBtn);
     findLayout->addWidget(m_chaseWidget);
 
     QVBoxLayout *mainLayout = new QVBoxLayout;
-    mainLayout->setMargin(1);
+    //mainLayout->setMargin(1);
+	mainLayout->setContentsMargins(1, 1, 1, 1);
     mainLayout->setSpacing(1);
     mainLayout->addLayout(findLayout);
     mainLayout->addWidget(m_apiView);

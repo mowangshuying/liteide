@@ -21,6 +21,9 @@ target_link_libraries(rustedit PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    liteapi
+    fileutil
+    liteenvapi
 )
 
 if(NOT MACOS)

@@ -115,7 +115,7 @@ int SearchResultTreeItemDelegate::drawLineNumber(QPainter *painter, const QStyle
     const bool isSelected = option.state & QStyle::State_Selected;
     QString lineText = QString::number(lineNumber);
     int minimumLineNumberDigits = qMax((int)m_minimumLineNumberDigits, lineText.count());
-    int fontWidth = painter->fontMetrics().width(QString(minimumLineNumberDigits, QLatin1Char('0')));
+    int fontWidth = painter->fontMetrics().horizontalAdvance(QString(minimumLineNumberDigits, QLatin1Char('0')));
     int lineNumberAreaWidth = lineNumberAreaHorizontalPadding + fontWidth + lineNumberAreaHorizontalPadding;
     QRect lineNumberAreaRect(rect);
     lineNumberAreaRect.setWidth(lineNumberAreaWidth);

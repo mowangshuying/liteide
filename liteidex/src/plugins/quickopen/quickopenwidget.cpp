@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -61,7 +61,8 @@ QuickOpenWidget::QuickOpenWidget(LiteApi::IApplication *app, QWidget *parent) :
     m_wrap = true;
 
     m_layout = new QVBoxLayout;
-    m_layout->setMargin(0);
+    //m_layout->setMargin(0);
+	m_layout->setContentsMargins(0, 0, 0, 0);
     m_layout->setSpacing(0);
     m_layout->addWidget(m_edit);
     m_layout->addWidget(m_view);

@@ -26,10 +26,10 @@ qt_add_library(qtctexteditor
 )
 target_include_directories(qtctexteditor PUBLIC
     .
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(qtctexteditor PUBLIC
@@ -43,6 +43,8 @@ target_link_libraries(qtctexteditor PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
+    Qt::Xml
 )
 
 if(NOT MACOS)

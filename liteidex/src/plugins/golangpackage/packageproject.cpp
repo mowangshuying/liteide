@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -63,7 +63,8 @@ PackageProject::PackageProject(LiteApi::IApplication *app) :
     m_reloadTimer->setSingleShot(true);
 
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    //layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
     m_treeView = new PackageTree(m_widget);
     m_treeView->setEditTriggers(QTreeView::NoEditTriggers);
     m_treeView->setHeaderHidden(true);

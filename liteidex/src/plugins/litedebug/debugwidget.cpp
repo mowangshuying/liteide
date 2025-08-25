@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -122,7 +122,8 @@ DebugWidget::DebugWidget(LiteApi::IApplication *app, QObject *parent) :
 
 
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    //layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
     layout->addWidget(m_tabWidget);
 
     m_widget->setLayout(layout);

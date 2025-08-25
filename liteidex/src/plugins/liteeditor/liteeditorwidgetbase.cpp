@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -794,7 +794,7 @@ int LiteEditorWidgetBase::extraAreaWidth()
             max /= 10;
             ++digits;
         }
-        space += linefm.width(QLatin1Char('9')) * digits;
+        space += linefm.horizontalAdvance(QLatin1Char('9')) * digits;
     }
     if (m_marksVisible) {
         int markWidth = fm.lineSpacing();
@@ -3185,7 +3185,7 @@ QTextBlock LiteEditorWidgetBase::foldedBlockAt(const QPoint &pos, QRect *box) co
 
                 QRectF collapseRect(lineRect.right() + 12,
                                     lineRect.top(),
-                                    fontMetrics().width(QLatin1String(" {...}; ")),
+                                    fontMetrics().horizontalAdvance(QLatin1String(" {...}; ")),
                                     lineRect.height());
                 if (collapseRect.contains(pos)) {
                     QTextBlock result = block;
@@ -3643,7 +3643,7 @@ void LiteEditorWidgetBase::mouseMoveEvent(QMouseEvent *e)
                 int column = this->tabSettings().columnAt(
                             cursor.block().text(), cursor.positionInBlock());
                 if (cursor.positionInBlock() == cursor.block().length()-1)
-                    column += (e->pos().x() - cursorRect().center().x())/QFontMetricsF(font()).width(QLatin1Char(' '));
+                    column += (e->pos().x() - cursorRect().center().x())/QFontMetricsF(font()).horizontalAdvance(QLatin1Char(' '));
                 m_blockSelection.moveAnchor(cursor.blockNumber(), column);
                 setTextCursor(m_blockSelection.selection(this->tabSettings()));
                 viewport()->update();
@@ -3952,7 +3952,7 @@ void LiteEditorWidgetBase::paintEvent(QPaintEvent *e)
                     && block.position() <= m_blockSelection.lastBlock.block().position()) {
                 QString text = block.text();
                 const TextEditor::TabSettings &ts = this->tabSettings();
-                qreal spacew = QFontMetricsF(font()).width(QLatin1Char(' '));
+                qreal spacew = QFontMetricsF(font()).horizontalAdvance(QLatin1Char(' '));
 
                 int offset = 0;
                 int relativePos  =  ts.positionAtColumn(text, m_blockSelection.firstVisualColumn, &offset);
@@ -4157,7 +4157,7 @@ void LiteEditorWidgetBase::paintEvent(QPaintEvent *e)
 
             QRectF collapseRect(lineRect.right() + 12,
                                 lineRect.top(),
-                                fontMetrics().width(QLatin1String(" {...}; ")),
+                                fontMetrics().horizontalAdvance(QLatin1String(" {...}; ")),
                                 lineRect.height());
             painter.setRenderHint(QPainter::Antialiasing, true);
             painter.translate(.5, .5);

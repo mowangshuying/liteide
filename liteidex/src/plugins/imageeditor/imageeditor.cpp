@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -121,7 +121,8 @@ ImageEditor::ImageEditor(LiteApi::IApplication *app)
     m_mvToolBar->addSeparator();
 
     QHBoxLayout *toolLayout = new QHBoxLayout;
-    toolLayout->setMargin(0);
+    //toolLayout->setMargin(0);
+	toolLayout->setContentsMargins(0, 0, 0, 0);
     toolLayout->setSpacing(0);
     toolLayout->addWidget(m_toolBar);
     toolLayout->addWidget(m_mvToolBar);

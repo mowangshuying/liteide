@@ -63,8 +63,8 @@ public:
     ~WideEnoughLineEdit(){}
     QSize sizeHint() const {
         QSize sh = QLineEdit::minimumSizeHint();
-        sh.rwidth() += qMax(25 * fontMetrics().width(QLatin1Char('x')),
-                            fontMetrics().width(text()));
+        sh.rwidth() += qMax(25 * fontMetrics().horizontalAdvance(QLatin1Char('x')),
+                            fontMetrics().horizontalAdvance(text()));
         return sh;
     }
 public slots:

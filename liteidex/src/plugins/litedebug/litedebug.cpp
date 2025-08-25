@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -79,11 +79,13 @@ LiteDebug::LiteDebug(LiteApi::IApplication *app, QObject *parent) :
     QVBoxLayout *layout = new QVBoxLayout;    
     QToolBar *widgetToolBar = new QToolBar;
     widgetToolBar->setIconSize(LiteApi::getToolBarIconSize(m_liteApp));
-    layout->setMargin(0);
+    //layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
 
     QHBoxLayout *hbox = new QHBoxLayout;
-    hbox->setMargin(0);
+    //hbox->setMargin(0);
+	hbox->setContentsMargins(0, 0, 0, 0);
     hbox->setSpacing(0);
     hbox->addWidget(widgetToolBar);
     QPushButton *close = new QPushButton();

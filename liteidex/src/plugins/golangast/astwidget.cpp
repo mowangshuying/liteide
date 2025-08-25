@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -52,7 +52,8 @@ AstWidget::AstWidget(bool outline, LiteApi::IApplication *app, QWidget *parent) 
 {
     m_bFirst = true;
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    //layout->setMargin(0);
+	//layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
 
     m_tree = new SymbolTreeView;
