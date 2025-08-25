@@ -1,13 +1,13 @@
-qt_add_library(filesystem
+qt_add_library(filesystem STATIC
     ../folderview/folderdialog.cpp ../folderview/folderdialog.h
     filesystemmodel.cpp filesystemmodel.h
     filesystemwidget.cpp filesystemwidget.h
 )
 target_include_directories(filesystem PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(filesystem PUBLIC

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright 2008 Google Inc. All Rights Reserved.
  * Author: fraser@google.com (Neil Fraser)
  * Author: mikeslemmer@gmail.com (Mike Slemmer)
@@ -21,6 +21,7 @@
 
 // Code known to compile and run with Qt 4.3.3 and Qt 4.4.0.
 #include <QtCore>
+#include <QtCore5Compat>
 #include "liteapi/liteqt.h"
 #include "diff_match_patch.h"
 

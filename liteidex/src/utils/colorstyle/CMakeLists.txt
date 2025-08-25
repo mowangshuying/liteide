@@ -1,11 +1,11 @@
-qt_add_library(colorstyle
+qt_add_library(colorstyle STATIC
     colorstyle.cpp colorstyle.h
 )
 target_include_directories(colorstyle PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(colorstyle PUBLIC

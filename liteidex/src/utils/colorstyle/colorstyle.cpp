@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -76,12 +76,12 @@ bool ColorStyleScheme::load(QIODevice *dev, const QString &/*fileName*/)
         switch (reader.readNext()) {
         case QXmlStreamReader::StartElement:
             attrs = reader.attributes();
-            if (reader.name() == "style-scheme") {
+            if (reader.name().toString() == "style-scheme") {
                 m_name = attrs.value("name").toString();
                 if (!m_name.isEmpty()) {
                     bread = true;
                 }
-            } else if (reader.name() == "style" && style == 0 && bread) {
+            } else if (reader.name().toString() == "style" && style == 0 && bread) {
                 QString tmp = attrs.value("name").toString();
                 if (tmp.isEmpty()) {
                     break;
@@ -107,7 +107,7 @@ bool ColorStyleScheme::load(QIODevice *dev, const QString &/*fileName*/)
             }
             break;
         case QXmlStreamReader::EndElement:
-            if (reader.name() == "style") {
+            if (reader.name().toString() == "style") {
                 if (style) {
                     if (!style->name().isEmpty()) {
                         m_nameStyleMap.insert(style->name(),style);

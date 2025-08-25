@@ -1,8 +1,8 @@
-qt_add_library(litefindapi
+qt_add_library(litefindapi STATIC
     litefindapi.h
 )
 target_include_directories(litefindapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(litefindapi PUBLIC

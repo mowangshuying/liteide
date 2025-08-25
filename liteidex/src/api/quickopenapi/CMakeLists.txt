@@ -1,8 +1,8 @@
-qt_add_library(quickopenapi
+qt_add_library(quickopenapi STATIC
     quickopenapi.h
 )
 target_include_directories(quickopenapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(quickopenapi PUBLIC

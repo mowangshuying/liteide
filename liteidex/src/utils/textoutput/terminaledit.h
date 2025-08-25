@@ -25,6 +25,7 @@
 #define TERMINALEDIT_H
 
 #include <QPlainTextEdit>
+#include <QRegularExpression>
 
 class TerminalEdit : public QPlainTextEdit
 {

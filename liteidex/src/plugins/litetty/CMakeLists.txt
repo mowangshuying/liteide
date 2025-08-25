@@ -22,6 +22,8 @@ target_link_libraries(litetty PRIVATE
     Qt::Core
     Qt::Gui
     Qt::Network
+    liteapi
+    litettyapi
 )
 
 if(WIN32)

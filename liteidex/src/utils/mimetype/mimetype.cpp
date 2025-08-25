@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -220,7 +220,7 @@ bool MimeType::loadMimeTypes(LiteApi::IMimeTypeManager *manager, QIODevice *dev,
         switch (reader.readNext()) {
         case QXmlStreamReader::StartElement:
             attrs = reader.attributes();
-            if (reader.name() == "mime-type" && mimeType == 0) {
+            if (reader.name().toString() == "mime-type" && mimeType == 0) {
                 mimeType = new MimeType;
                 mimeType->setType(attrs.value("type").toString());
                 mimeType->setPackage(attrs.value("package").toString());
@@ -228,9 +228,9 @@ bool MimeType::loadMimeTypes(LiteApi::IMimeTypeManager *manager, QIODevice *dev,
                 mimeType->setScheme(attrs.value("scheme").toString());
                 mimeType->setTabToSpace(attrs.value("tabtospace").toString());
                 mimeType->setTabWidth(attrs.value("tabwidth").toString());
-            } else if (reader.name() == "sub-class-of" && mimeType) {
+            } else if (reader.name().toString() == "sub-class-of" && mimeType) {
                 mimeType->appendSubClassesOf(attrs.value("type").toString());
-            } else if (reader.name() == "comment" && mimeType) {
+            } else if (reader.name().toString() == "comment" && mimeType) {
                 QString locale = attrs.value("xml:lang").toString();
                 const QString comment = QCoreApplication::translate("MimeType", reader.readElementText().toLatin1());
                 if (locale.isEmpty()) {
@@ -238,12 +238,12 @@ bool MimeType::loadMimeTypes(LiteApi::IMimeTypeManager *manager, QIODevice *dev,
                 } else {
                     mimeType->appendLocalComment(locale,comment);
                 }
-            } else if (reader.name() == "glob" && mimeType) {
+            } else if (reader.name().toString() == "glob" && mimeType) {
                 mimeType->appendGlobPatterns(attrs.value("pattern").toString());
             }
             break;
         case QXmlStreamReader::EndElement:
-            if (reader.name() == "mime-type") {
+            if (reader.name().toString() == "mime-type") {
                 bool b = false;
                 if (mimeType && !mimeType->isEmpty()) {
                     if (manager->addMimeType(mimeType)) {

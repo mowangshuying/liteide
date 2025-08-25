@@ -4,10 +4,10 @@ qt_add_library(dlvclient
     varianthelper.cpp varianthelper.h
 )
 target_include_directories(dlvclient PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(dlvclient PUBLIC

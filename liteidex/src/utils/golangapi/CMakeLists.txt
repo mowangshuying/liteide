@@ -1,11 +1,11 @@
-qt_add_library(golangapi
+qt_add_library(golangapi STATIC
     golangapi.cpp golangapi.h
 )
 target_include_directories(golangapi PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(golangapi PUBLIC
@@ -18,6 +18,7 @@ target_link_libraries(golangapi PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

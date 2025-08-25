@@ -1,4 +1,4 @@
-/* This file is part of qjson
+﻿/* This file is part of qjson
   *
   * Copyright (C) 2009 Till Adam <adam@kde.org>
   * Copyright (C) 2009 Flavio Castelli <flavio@castelli.name>
@@ -24,6 +24,7 @@
 #include <QtCore/QDataStream>
 #include <QtCore/QStringList>
 #include <QtCore/QVariant>
+#include <QIODevice>
 
 #include <cmath>
 

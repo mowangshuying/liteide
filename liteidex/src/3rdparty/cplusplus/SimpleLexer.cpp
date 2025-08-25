@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
 **
 ** Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
@@ -88,7 +88,10 @@ QList<Token> SimpleLexer::operator()(const QString &text, int state)
             break;
         }
 
-        QStringRef spell = text.midRef(lex.tokenOffset(), lex.tokenLength());
+        //QStringRef spell = text.midRef(lex.tokenOffset(), lex.tokenLength());
+        //QStringRef _ret(&_text, firstToken.begin(), firstToken.length());
+        QStringRef spell(&text, lex.tokenOffset(), lex.tokenLength());
+
         lex.setScanAngleStringLiteralTokens(false);
 
         if (tk.f.newline && tk.is(T_POUND))

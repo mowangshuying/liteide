@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2017 LiteIDE. All rights reserved.
@@ -42,7 +42,7 @@ struct ResponseError
     void fromMap(const QVariantMap &map)
     {
         error = map["error"].toString();
-        id = map["id"].toInt();
+        id = QString::asprintf("%d", map["id"].toInt());
         result = map["result"];
     }
 };

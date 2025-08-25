@@ -24,6 +24,7 @@ target_link_libraries(markdown PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 

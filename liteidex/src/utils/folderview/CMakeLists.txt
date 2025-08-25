@@ -1,4 +1,4 @@
-qt_add_library(folderview
+qt_add_library(folderview STATIC
     abstractmultiproxymodel.cpp abstractmultiproxymodel.h abstractmultiproxymodel_p.h
     basefolderview.cpp
     basefoldeview.h
@@ -13,10 +13,10 @@ qt_add_library(folderview
     multiindexmodel.cpp multiindexmodel.h multiindexmodel_p.h
 )
 target_include_directories(folderview PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(folderview PUBLIC

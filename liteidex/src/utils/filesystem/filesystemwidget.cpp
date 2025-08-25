@@ -45,6 +45,7 @@
 #include <QFileDialog>
 #include <QHeaderView>
 #include <QDebug>
+#include <QStandardPaths>
 #ifdef Q_OS_WIN
 #include <windows.h>
 //lite_memory_check_begin
@@ -80,7 +81,8 @@ FileSystemWidget::FileSystemWidget(bool bMultiDirMode, LiteApi::IApplication *ap
     m_tree->setModel(m_model);
 
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    // layout->setMargin(0);
+    layout->setContentsMargins(0,0,0,0);
     layout->addWidget(m_tree);
     this->setLayout(layout);
 

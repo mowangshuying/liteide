@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2020 LiteIDE. All rights reserved.
@@ -133,7 +133,8 @@ Terminal::Terminal(LiteApi::IApplication *app, QObject *parent) : LiteApi::ITerm
 
 
     QVBoxLayout *layout = new QVBoxLayout(m_widget);
-    layout->setMargin(0);
+    //layout->setMargin(0);
+	layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     layout->addWidget(m_tab->tabBarWidget());
     layout->addWidget(m_tab->stackedWidget());

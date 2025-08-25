@@ -1,8 +1,8 @@
-qt_add_library(litebuildapi
+qt_add_library(litebuildapi STATIC
     litebuildapi.h
 )
 target_include_directories(litebuildapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(litebuildapi PUBLIC

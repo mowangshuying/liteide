@@ -1,8 +1,8 @@
-qt_add_library(liteenvapi
+qt_add_library(liteenvapi STATIC
     liteenvapi.h
 )
 target_include_directories(liteenvapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(liteenvapi PUBLIC

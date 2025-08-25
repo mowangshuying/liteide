@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
 **
 ** Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
@@ -32,6 +32,7 @@
 #include "Token.h"
 
 #include <QString>
+#include <QStringRef>
 #include <QList>
 
 namespace CPlusPlus {

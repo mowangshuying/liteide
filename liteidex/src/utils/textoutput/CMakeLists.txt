@@ -1,12 +1,12 @@
-qt_add_library(textoutput
+qt_add_library(textoutput STATIC
     terminaledit.cpp terminaledit.h
     textoutput.cpp textoutput.h
 )
 target_include_directories(textoutput PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(textoutput PUBLIC
@@ -19,6 +19,7 @@ target_link_libraries(textoutput PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

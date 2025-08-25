@@ -1,8 +1,8 @@
-qt_add_library(litettyapi
+qt_add_library(litettyapi STATIC
     litettyapi.h
 )
 target_include_directories(litettyapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(litettyapi PUBLIC

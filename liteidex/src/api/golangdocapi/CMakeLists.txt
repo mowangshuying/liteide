@@ -1,8 +1,8 @@
-qt_add_library(golangdocapi
+qt_add_library(golangdocapi STATIC
     golangdocapi.h
 )
 target_include_directories(golangdocapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(golangdocapi PUBLIC

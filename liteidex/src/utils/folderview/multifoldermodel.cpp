@@ -25,7 +25,6 @@
 #include "filesystemmodelex.h"
 #include <QFileSystemModel>
 #include <QFileInfo>
-#include <QDirModel>
 #include <QDateTime>
 #include <QDebug>
 //lite_memory_check_begin
@@ -75,7 +74,11 @@ bool QDirSortItemComparator::sort(const QDirSortItem &n1, const QDirSortItem &n2
         r = f1->item.lastModified().secsTo(f2->item.lastModified());
         break;
       case QDir::Size:
-          r = int(qBound<qint64>(-1, f2->item.size() - f1->item.size(), 1));
+          {
+              qint64 sizeDiff = f2->item.size() - f1->item.size();
+              qint64 boundedValue = sizeDiff < -1 ? -1 : (sizeDiff > 1 ? 1 : sizeDiff);
+              r = int(boundedValue);
+          }
         break;
       case QDir::Type:
       {
@@ -191,9 +194,12 @@ bool MultiFolderModel::isRootPath(const QString &path) const
 {
     QFileInfo info(path);
     foreach (QAbstractItemModel *model, this->sourceModelList()) {
-        QString rootPath = ((QFileSystemModel*)model)->rootPath();
-        if (QFileInfo(rootPath) == info) {
-            return true;
+        QFileSystemModel *fsModel = qobject_cast<QFileSystemModel*>(model);
+        if (fsModel) {
+            QString rootPath = fsModel->rootPath();
+            if (QFileInfo(rootPath) == info) {
+                return true;
+            }
         }
     }
     return false;
@@ -325,7 +331,7 @@ QFile::Permissions MultiFolderModel::permissions(const QModelIndex &index) const
 {
     SourceModelIndex si = this->mapToSourceEx(index);
     if (!si.isValid()) {
-        return 0;
+        return QFile::Permissions();
     }
     return ((QFileSystemModel*)si.model)->permissions(si.index);
 }

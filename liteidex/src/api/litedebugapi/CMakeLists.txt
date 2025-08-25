@@ -1,8 +1,8 @@
-qt_add_library(litedebugapi
+qt_add_library(litedebugapi STATIC
     litedebugapi.h
 )
 target_include_directories(litedebugapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(litedebugapi PUBLIC

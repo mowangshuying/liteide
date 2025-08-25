@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
 **
 ** Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
@@ -120,7 +120,9 @@ QString BackwardsScanner::text(int index) const
 QStringRef BackwardsScanner::textRef(int index) const
 {
     const Token &firstToken = _tokens.at(index + _offset);
-    return _text.midRef(firstToken.begin(), firstToken.length());
+
+	QStringRef _ret(&_text, firstToken.begin(), firstToken.length());
+    return _ret;
 }
 
 int BackwardsScanner::size() const

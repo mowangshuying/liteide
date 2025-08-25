@@ -1,11 +1,11 @@
-qt_add_library(mimetype
+qt_add_library(mimetype STATIC
     mimetype.cpp mimetype.h
 )
 target_include_directories(mimetype PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(mimetype PUBLIC

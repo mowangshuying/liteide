@@ -1,8 +1,8 @@
-qt_add_library(golangastapi
+qt_add_library(golangastapi STATIC
     golangastapi.h
 )
 target_include_directories(golangastapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(golangastapi PUBLIC

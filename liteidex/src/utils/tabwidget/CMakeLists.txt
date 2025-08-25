@@ -1,11 +1,11 @@
-qt_add_library(tabwidget
+qt_add_library(tabwidget STATIC
     litetabwidget.cpp litetabwidget.h
 )
 target_include_directories(tabwidget PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(tabwidget PUBLIC

@@ -1,4 +1,4 @@
-/****************************************************************************
+﻿/****************************************************************************
 **
 ** Copyright (C) 2014 Digia Plc and/or its subsidiary(-ies).
 ** Contact: http://www.qt-project.org/legal
@@ -165,8 +165,8 @@ void SearchResultTreeItemDelegate::drawText(QPainter *painter,
     // clip searchTermLength to end of line
     searchTermLength = qMin(searchTermLength, text.length() - searchTermStart);
     const int textMargin = QApplication::style()->pixelMetric(QStyle::PM_FocusFrameHMargin) + 1;
-    int searchTermStartPixels = painter->fontMetrics().width(text.left(searchTermStart));
-    int searchTermLengthPixels = painter->fontMetrics().width(text.mid(searchTermStart, searchTermLength));
+    int searchTermStartPixels = painter->fontMetrics().horizontalAdvance(text.left(searchTermStart));
+    int searchTermLengthPixels = painter->fontMetrics().horizontalAdvance(text.mid(searchTermStart, searchTermLength));
 
     // rects
     QRect beforeHighlightRect(rect);

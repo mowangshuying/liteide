@@ -7,7 +7,7 @@ qt_add_library(liteapi STATIC
     liteutil.h
 )
 target_include_directories(liteapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(liteapi PUBLIC

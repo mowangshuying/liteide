@@ -24,6 +24,7 @@ target_link_libraries(welcome PRIVATE
     Qt::Core
     Qt::Gui
     Qt::Xml
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

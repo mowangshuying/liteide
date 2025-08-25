@@ -10,7 +10,7 @@ set(CMAKE_AUTOMOC ON)
 include(GNUInstallDirs)
 
 find_package(QT NAMES Qt5 Qt6 REQUIRED COMPONENTS Core)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui Network Xml)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Gui Network Xml Core5Compat)
 find_package(Qt${QT_VERSION_MAJOR} OPTIONAL_COMPONENTS PrintSupport Svg  Widgets) # WebKitWidgets
 
 

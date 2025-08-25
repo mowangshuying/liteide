@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -24,7 +24,8 @@
 #include "golangapi.h"
 #include <QFile>
 #include <QSet>
-#include <QRegExp>
+// #include <QRegExp>
+#include <QtCore5Compat>
 #include <QTextStream>
 #include <QFile>
 #include <QDebug>
@@ -50,7 +51,8 @@ bool GolangApi::load(const QString &fileName)
         return false;
     }
     QTextStream stream(&file);
-    stream.setCodec("utf-8");
+    //stream.setCodec("utf-8");
+    stream.setEncoding(QStringConverter::Utf8);
     return loadStream(&stream);
 }
 

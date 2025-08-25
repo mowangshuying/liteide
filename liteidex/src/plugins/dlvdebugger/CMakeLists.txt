@@ -23,6 +23,7 @@ target_link_libraries(dlvdebugger PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(CONFIG___contains___liteide_use_dlvclient)

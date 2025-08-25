@@ -1,13 +1,13 @@
-qt_add_library(documentbrowser
+qt_add_library(documentbrowser STATIC
     documentbrowser.cpp documentbrowser.h
     documentbrowserfactory.cpp documentbrowserfactory.h
 )
 target_include_directories(documentbrowser PUBLIC
-    ../../api/docbrowserapi
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../api/docbrowserapi
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(documentbrowser PUBLIC
@@ -20,6 +20,7 @@ target_link_libraries(documentbrowser PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

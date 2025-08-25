@@ -1,11 +1,11 @@
-qt_add_library(processex
+qt_add_library(processex STATIC
     processex.cpp processex.h
 )
 target_include_directories(processex PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(processex PUBLIC

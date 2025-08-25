@@ -1,11 +1,11 @@
-qt_add_library(navigate
+qt_add_library(navigate STATIC
     navigate.cpp navigate.h
 )
 target_include_directories(navigate PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(navigate PUBLIC

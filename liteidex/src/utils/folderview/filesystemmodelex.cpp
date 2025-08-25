@@ -85,10 +85,11 @@ QVariant FileSystemModelEx::data(const QModelIndex &index, int role) const
             return QDir::toNativeSeparators(this->filePath(index));
         } else {
             QFileInfo info = this->fileInfo(index);
+            QDateTime lastModified = info.lastModified();
             return QString("%1\n%2\n%3")
                     .arg(QDir::toNativeSeparators(info.filePath()))
                     .arg(fileSize(info.size()))
-                    .arg(info.lastModified().toString(Qt::SystemLocaleDate));
+                    .arg(QLocale::system().toString(lastModified, "yyyy-MM-dd HH:mm:ss"));
         }
     }
     return QFileSystemModel::data(index,role);

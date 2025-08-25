@@ -1,8 +1,8 @@
-qt_add_library(docbrowserapi
+qt_add_library(docbrowserapi STATIC
     docbrowserapi.h
 )
 target_include_directories(docbrowserapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(docbrowserapi PUBLIC

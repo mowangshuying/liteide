@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -204,7 +204,8 @@ void HtmlPreview::appLoaded()
     m_cssMenu->addActions(m_cssActGroup->actions());
 
     QVBoxLayout *layout = new QVBoxLayout;
-    layout->setMargin(0);
+    //layout->setMargin(0);
+    layout->setContentsMargins(0, 0, 0, 0);
     layout->setSpacing(0);
     layout->addWidget(m_htmlWidget->widget(),1);
     m_widget->setLayout(layout);
@@ -432,8 +433,9 @@ void HtmlPreview::printPreview()
     }
 #ifndef QT_NO_PRINTER
     QPrinter printer(QPrinter::HighResolution);
-    printer.setPageMargins(10,10,10,10,QPrinter::Millimeter);
-    printer.setPageSize(QPrinter::A4);
+    //printer.setPageMargins(10,10,10,10,QPrinter::Millimeter);
+    printer.setPageMargins(QMarginsF(10, 10, 10, 10));
+    printer.setPageSize(QPageSize::A4);
     QPrintPreviewDialog dlg(&printer,m_widget);
     connect(&dlg,SIGNAL(paintRequested(QPrinter*)),m_htmlWidget,SLOT(print(QPrinter*)));
     dlg.exec();

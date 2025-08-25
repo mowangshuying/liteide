@@ -1,11 +1,11 @@
-qt_add_library(extension
+qt_add_library(extension STATIC
     extension.cpp extension.h
 )
 target_include_directories(extension PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(extension PUBLIC

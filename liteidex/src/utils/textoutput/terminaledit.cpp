@@ -24,6 +24,7 @@
 #include "terminaledit.h"
 
 #include <QTextCursor>
+#include <QRegularExpression>
 #include <QLineEdit>
 #include <QKeyEvent>
 #include <QMouseEvent>
@@ -35,6 +36,8 @@
 #include <QApplication>
 #include <QMimeData>
 #include <QDebug>
+#include <QRegExp>
+
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -120,7 +123,7 @@ void TerminalEdit::append(const QString &text, QTextCharFormat *fmt)
 {
     QString str = text;
     if (m_bFilterTermColor) {
-        static QRegExp rx("\033\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]");
+        static QRegularExpression rx(QStringLiteral("\033\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]"));
         str.remove(rx);
     }
     if (str.isEmpty()) {

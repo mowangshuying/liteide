@@ -1,8 +1,8 @@
-qt_add_library(liteeditorapi STATIC
+qt_add_library(liteeditorapi STATIC STATIC
     liteeditorapi.h
 )
 target_include_directories(liteeditorapi PUBLIC
-    ../../../src/api
+    ../../../../src/api
 )
 
 target_compile_definitions(liteeditorapi PUBLIC

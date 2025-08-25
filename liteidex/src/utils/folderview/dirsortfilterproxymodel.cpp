@@ -24,7 +24,6 @@
 #include "dirsortfilterproxymodel.h"
 #include <QFileSystemModel>
 #include <QFileInfo>
-#include <QDirModel>
 #include <QDateTime>
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
@@ -73,7 +72,11 @@ bool QDirSortItemComparator::sort(const QDirSortItem &n1, const QDirSortItem &n2
         r = f1->item.lastModified().secsTo(f2->item.lastModified());
         break;
       case QDir::Size:
-          r = int(qBound<qint64>(-1, f2->item.size() - f1->item.size(), 1));
+          {
+              qint64 sizeDiff = f2->item.size() - f1->item.size();
+              qint64 boundedValue = sizeDiff < -1 ? -1 : (sizeDiff > 1 ? 1 : sizeDiff);
+              r = int(boundedValue);
+          }
         break;
       case QDir::Type:
       {

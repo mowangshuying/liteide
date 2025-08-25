@@ -1,14 +1,14 @@
-qt_add_library(editorutil
+qt_add_library(editorutil STATIC
     checkdata.h
     difflib.h
     editorutil.cpp editorutil.h
     libucd.h
 )
 target_include_directories(editorutil PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(editorutil PUBLIC
@@ -21,6 +21,7 @@ target_link_libraries(editorutil PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

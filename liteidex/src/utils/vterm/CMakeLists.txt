@@ -1,13 +1,13 @@
-qt_add_library(vtermwidget
+qt_add_library(vtermwidget STATIC
     vtermcolor.h
     vtermwidget.cpp vtermwidget.h
     vtermwidgetbase.cpp vtermwidgetbase.h
 )
 target_include_directories(vtermwidget PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(vtermwidget PUBLIC

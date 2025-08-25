@@ -24,6 +24,7 @@ target_link_libraries(fakevim PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

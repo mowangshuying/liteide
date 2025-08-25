@@ -2,10 +2,10 @@ qt_add_library(diff_match_pitch
     diff_match_patch.cpp diff_match_patch.h
 )
 target_include_directories(diff_match_pitch PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(diff_match_pitch PUBLIC
@@ -18,6 +18,7 @@ target_link_libraries(diff_match_pitch PUBLIC
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

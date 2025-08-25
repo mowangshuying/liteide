@@ -1,12 +1,12 @@
-qt_add_library(fileutil
+qt_add_library(fileutil STATIC
     fileutil.cpp fileutil.h
     findfilesthread.cpp findfilesthread.h
 )
 target_include_directories(fileutil PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(fileutil PUBLIC

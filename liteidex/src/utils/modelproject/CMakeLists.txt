@@ -1,12 +1,12 @@
-qt_add_library(modelproject
+qt_add_library(modelproject STATIC
     modelfileimpl.cpp modelfileimpl.h
     modelprojectimpl.cpp modelprojectimpl.h
 )
 target_include_directories(modelproject PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(modelproject PUBLIC

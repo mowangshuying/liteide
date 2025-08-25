@@ -1,8 +1,8 @@
-qt_add_library(terminalapi
+qt_add_library(terminalapi STATIC
     terminalapi.h
 )
 target_include_directories(terminalapi PUBLIC
-    ../../src/api
+    ../../../src/api
 )
 
 target_compile_definitions(terminalapi PUBLIC

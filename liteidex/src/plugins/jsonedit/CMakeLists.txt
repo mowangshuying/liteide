@@ -21,6 +21,7 @@ target_link_libraries(jsonedit PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)
