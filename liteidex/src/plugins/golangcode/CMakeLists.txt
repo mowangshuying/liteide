@@ -8,9 +8,9 @@ target_sources(golangcode PRIVATE
     golangcodeplugin.cpp golangcodeplugin.h
 )
 target_include_directories(golangcode PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangcode PRIVATE

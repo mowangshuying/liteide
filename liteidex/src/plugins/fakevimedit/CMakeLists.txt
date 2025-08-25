@@ -13,9 +13,9 @@ target_sources(fakevimedit PRIVATE
 target_include_directories(fakevimedit PRIVATE
     ../../3rdparty/fakevim/fakevim
     ../../3rdparty/fakevim/fakevim/utils
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(fakevimedit PRIVATE

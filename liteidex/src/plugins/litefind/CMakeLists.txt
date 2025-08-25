@@ -8,9 +8,9 @@ target_sources(litefind PRIVATE
     replacedocument.cpp replacedocument.h
 )
 target_include_directories(litefind PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(litefind PRIVATE

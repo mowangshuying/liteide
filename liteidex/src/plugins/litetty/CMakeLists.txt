@@ -5,9 +5,9 @@ target_sources(litetty PRIVATE
     litettyplugin.cpp litettyplugin.h
 )
 target_include_directories(litetty PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(litetty PRIVATE

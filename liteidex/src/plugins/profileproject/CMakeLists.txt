@@ -22,9 +22,9 @@ target_sources(profileproject PRIVATE
     profileprojectplugin.cpp profileprojectplugin.h
 )
 target_include_directories(profileproject PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(profileproject PRIVATE

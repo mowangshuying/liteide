@@ -28,9 +28,9 @@ target_sources(qsqleditor PRIVATE
     tableviewwidget.cpp tableviewwidget.h tableviewwidget.ui
 )
 target_include_directories(qsqleditor PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(qsqleditor PRIVATE

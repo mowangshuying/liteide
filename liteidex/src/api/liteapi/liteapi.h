@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -650,7 +650,7 @@ public:
                          const QString &title,
                          Qt::DockWidgetArea ares = Qt::LeftDockWidgetArea,
                          Qt::DockWidgetAreas alowedAreas = Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea,
-                         QDockWidget::DockWidgetFeatures  features = QDockWidget::AllDockWidgetFeatures) = 0;
+                         QDockWidget::DockWidgetFeatures  features = QDockWidget::DockWidgetClosable | QDockWidget::DockWidgetMovable | QDockWidget::DockWidgetFloatable) = 0;
     virtual void removeDock(QWidget *widget) = 0;
     virtual void showDock(QWidget *widget) = 0;
     virtual void hideDock(QWidget *widget) = 0;

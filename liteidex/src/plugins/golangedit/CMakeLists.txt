@@ -14,9 +14,9 @@ target_sources(golangedit PRIVATE
     goremovetagsdialog.cpp goremovetagsdialog.h goremovetagsdialog.ui
 )
 target_include_directories(golangedit PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangedit PRIVATE

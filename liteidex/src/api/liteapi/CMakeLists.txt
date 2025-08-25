@@ -1,4 +1,4 @@
-qt_add_library(liteapi
+qt_add_library(liteapi STATIC
     liteapi.h
     litehtml.h
     liteids.h

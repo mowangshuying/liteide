@@ -10,9 +10,9 @@ target_sources(litebuild PRIVATE
     litebuildplugin.cpp litebuildplugin.h
 )
 target_include_directories(litebuild PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(litebuild PRIVATE

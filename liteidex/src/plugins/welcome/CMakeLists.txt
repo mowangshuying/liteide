@@ -7,9 +7,9 @@ target_sources(welcome PRIVATE
 )
 target_include_directories(welcome PRIVATE
     ../../api/docbrowserapi
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(welcome PRIVATE

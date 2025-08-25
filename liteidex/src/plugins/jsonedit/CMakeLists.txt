@@ -5,9 +5,9 @@ target_sources(jsonedit PRIVATE
     jsoneditplugin.cpp jsoneditplugin.h
 )
 target_include_directories(jsonedit PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(jsonedit PRIVATE

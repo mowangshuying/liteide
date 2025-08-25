@@ -11,10 +11,10 @@ qt_add_library(cplusplus
     gotypes.cpp
 )
 target_include_directories(cplusplus PUBLIC
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/api/liteapi
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/api/liteapi
+    ../../../src/utils
 )
 
 target_compile_definitions(cplusplus PUBLIC

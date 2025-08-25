@@ -23,9 +23,9 @@ target_sources(gdbdebugger PRIVATE
     gdbdebuggerplugin.cpp gdbdebuggerplugin.h
 )
 target_include_directories(gdbdebugger PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(gdbdebugger PRIVATE

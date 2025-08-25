@@ -5,9 +5,9 @@ target_sources(golangplay PRIVATE
     goplaybrowser.cpp goplaybrowser.h
 )
 target_include_directories(golangplay PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangplay PRIVATE

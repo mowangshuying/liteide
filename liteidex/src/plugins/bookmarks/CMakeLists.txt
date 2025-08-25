@@ -6,9 +6,9 @@ target_sources(bookmarks PRIVATE
     bookmarksplugin.cpp bookmarksplugin.h
 )
 target_include_directories(bookmarks PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(bookmarks PRIVATE
@@ -22,6 +22,8 @@ target_link_libraries(bookmarks PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    liteapi
+    liteeditorapi
 )
 
 

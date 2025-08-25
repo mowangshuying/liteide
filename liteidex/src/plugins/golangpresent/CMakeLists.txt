@@ -6,9 +6,9 @@ target_sources(golangpresent PRIVATE
     golangpresentplugin.cpp golangpresentplugin.h
 )
 target_include_directories(golangpresent PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangpresent PRIVATE

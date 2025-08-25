@@ -19,9 +19,9 @@ target_sources(liteshell PRIVATE
     liteshellplugin.cpp liteshellplugin.h
 )
 target_include_directories(liteshell PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(liteshell PRIVATE

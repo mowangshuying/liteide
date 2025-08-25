@@ -7,9 +7,9 @@ target_sources(dlvdebugger PRIVATE
     dlvdebuggerplugin.cpp dlvdebuggerplugin.h
 )
 target_include_directories(dlvdebugger PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(dlvdebugger PRIVATE

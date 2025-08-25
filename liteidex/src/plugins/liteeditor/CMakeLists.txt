@@ -23,9 +23,9 @@ target_sources(liteeditor PRIVATE
     wordapi.cpp wordapi.h
 )
 target_include_directories(liteeditor PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(liteeditor PRIVATE

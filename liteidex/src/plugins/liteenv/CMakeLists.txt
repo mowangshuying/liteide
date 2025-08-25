@@ -8,9 +8,9 @@ target_sources(liteenv PRIVATE
     liteenvplugin.cpp liteenvplugin.h
 )
 target_include_directories(liteenv PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(liteenv PRIVATE

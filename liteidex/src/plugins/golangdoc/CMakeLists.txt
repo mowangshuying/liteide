@@ -10,9 +10,9 @@ target_sources(golangdoc PRIVATE
 )
 target_include_directories(golangdoc PRIVATE
     ../../api/docbrowserapi
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangdoc PRIVATE

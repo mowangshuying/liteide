@@ -8,9 +8,9 @@ target_sources(imageeditor PRIVATE
     imageeditorwidget.cpp imageeditorwidget.h
 )
 target_include_directories(imageeditor PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(imageeditor PRIVATE

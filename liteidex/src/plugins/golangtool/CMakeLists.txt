@@ -27,9 +27,9 @@ target_sources(golangtool PRIVATE
     importgopathdialog.cpp importgopathdialog.h importgopathdialog.ui
 )
 target_include_directories(golangtool PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangtool PRIVATE

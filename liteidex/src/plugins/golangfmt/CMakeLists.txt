@@ -7,9 +7,9 @@ target_sources(golangfmt PRIVATE
     golangfmtplugin.cpp golangfmtplugin.h
 )
 target_include_directories(golangfmt PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangfmt PRIVATE

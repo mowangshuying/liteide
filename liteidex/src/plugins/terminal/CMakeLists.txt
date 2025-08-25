@@ -7,9 +7,9 @@ target_sources(terminal PRIVATE
     terminalplugin.cpp terminalplugin.h
 )
 target_include_directories(terminal PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(terminal PRIVATE

@@ -22,9 +22,9 @@ target_sources(makefileproject PRIVATE
     makefileprojectplugin.cpp makefileprojectplugin.h
 )
 target_include_directories(makefileproject PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(makefileproject PRIVATE

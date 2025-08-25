@@ -6,9 +6,9 @@ target_sources(webkithtmlwidget PRIVATE
     webviewhtmlwidget.cpp webviewhtmlwidget.h
 )
 target_include_directories(webkithtmlwidget PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(webkithtmlwidget PRIVATE

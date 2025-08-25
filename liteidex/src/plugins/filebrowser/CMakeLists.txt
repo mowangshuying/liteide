@@ -7,9 +7,9 @@ target_sources(filebrowser PRIVATE
     filebrowserplugin.cpp filebrowserplugin.h
 )
 target_include_directories(filebrowser PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(filebrowser PRIVATE

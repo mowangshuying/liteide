@@ -12,9 +12,9 @@ target_sources(golangpackage PRIVATE
     packagetree.cpp packagetree.h
 )
 target_include_directories(golangpackage PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(golangpackage PRIVATE

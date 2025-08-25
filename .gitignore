@@ -40,3 +40,4 @@ liteidex/src/golang.org/
 #cmake
 CMakeLists.txt.user
 liteidex/build/
+.qmake2cmake

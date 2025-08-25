@@ -25,9 +25,9 @@ target_sources(syntaxeditor PRIVATE
     syntaxtexteditor.cpp syntaxtexteditor.h
 )
 target_include_directories(syntaxeditor PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(syntaxeditor PRIVATE

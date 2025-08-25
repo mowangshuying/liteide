@@ -5,9 +5,9 @@ target_sources(rustedit PRIVATE
     rusteditplugin.cpp rusteditplugin.h
 )
 target_include_directories(rustedit PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(rustedit PRIVATE

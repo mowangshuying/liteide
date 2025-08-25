@@ -16,9 +16,9 @@ target_sources(quickopen PRIVATE
     quickopenwidget.cpp quickopenwidget.h
 )
 target_include_directories(quickopen PRIVATE
-    ../../src/3rdparty
-    ../../src/api
-    ../../src/utils
+    ../../../src/3rdparty
+    ../../../src/api
+    ../../../src/utils
 )
 
 target_compile_definitions(quickopen PRIVATE
