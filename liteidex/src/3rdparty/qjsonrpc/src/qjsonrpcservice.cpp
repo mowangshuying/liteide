@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (C) 2012-2014 Matt Broadstone
  * Copyright (C) 2013 Fargier Sylvain
  * Contact: http://bitbucket.org/devonit/qjsonrpc
@@ -23,6 +23,7 @@
 #include "qjsonrpcsocket.h"
 #include "qjsonrpcservice_p.h"
 #include "qjsonrpcservice.h"
+#include <QStringRef>
 
 QJsonRpcServiceRequest::QJsonRpcServiceRequest()
     : d(new QJsonRpcServiceRequestPrivate)
@@ -281,7 +282,7 @@ static inline QVariant convertArgument(const QJsonValue &argument,
 {
     if (argument.isUndefined())
 #if QT_VERSION >= 0x050000
-        return QVariant(info.type, Q_NULLPTR);
+        return QVariant(QMetaType(info.type), Q_NULLPTR);
 #else
         return QVariant(info.type, (const void *) NULL);
 #endif
@@ -368,7 +369,10 @@ QJsonValue QJsonRpcServicePrivate::convertReturnValue(QVariant &returnValue)
 static inline QByteArray methodName(const QJsonRpcMessage &request)
 {
     const QString &methodPath(request.method());
-    return methodPath.midRef(methodPath.lastIndexOf('.') + 1).toLatin1();
+    //return methodPath.midRef(methodPath.lastIndexOf('.') + 1).toLatin1();
+	QStringRef ref(&methodPath, methodPath.lastIndexOf('.') + 1,
+		methodPath.length() - methodPath.lastIndexOf('.') - 1);
+	return ref.toLatin1();
 }
 
 QJsonRpcMessage QJsonRpcService::dispatch(const QJsonRpcMessage &request)
@@ -404,8 +408,7 @@ QJsonRpcMessage QJsonRpcService::dispatch(const QJsonRpcMessage &request)
             arguments.reserve(info.parameters.size());
             returnType = static_cast<QMetaType::Type>(info.returnType);
 #if QT_VERSION >= 0x050000
-            returnValue = (returnType == QMetaType::Void) ?
-                QVariant() : QVariant(returnType, Q_NULLPTR);
+            returnValue = (returnType == QMetaType::Void) ? QVariant() : QVariant(QMetaType(returnType), Q_NULLPTR);
 #else
             returnValue = (returnType == QMetaType::Void) ?
                 QVariant() : QVariant(returnType, (const void *) NULL);

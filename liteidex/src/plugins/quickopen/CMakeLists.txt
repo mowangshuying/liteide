@@ -1,4 +1,4 @@
-qt_add_plugin(quickopen)
+﻿qt_add_plugin(quickopen)
 target_sources(quickopen PRIVATE
     quickopen_global.h
     quickopenaction.cpp quickopenaction.h
@@ -32,6 +32,7 @@ target_link_libraries(quickopen PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Widgets
 )
 
 if(NOT MACOS)

@@ -30,6 +30,7 @@ target_link_libraries(fakevimedit PRIVATE
     # Remove: L
     Qt::Core
     Qt::Gui
+    Qt::Core5Compat
 )
 
 if(NOT MACOS)

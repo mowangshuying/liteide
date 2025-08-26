@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -30,7 +30,8 @@
 #include <QTextDocument>
 #include <QAbstractItemView>
 #include <QApplication>
-#include <QDesktopWidget>
+//#include <QDesktopWidget>
+#include <QScreen>
 #include <QLabel>
 #include <QHBoxLayout>
 #include <QPlainTextEdit>

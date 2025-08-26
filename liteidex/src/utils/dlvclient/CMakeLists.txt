@@ -1,4 +1,4 @@
-qt_add_library(dlvclient
+qt_add_library(dlvclient STATIC
     dlvclient.cpp dlvclient.h
     dlvtypes.h
     varianthelper.cpp varianthelper.h

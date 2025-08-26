@@ -33,6 +33,7 @@ target_link_libraries(qjsonrpc PUBLIC
     Qt::Core
     Qt::Gui
     Qt::Network
+    Qt::Core5Compat
 )
 
 if((QT_VERSION_MAJOR LESS 5))

@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -34,6 +34,9 @@
 #include <QFileInfo>
 #include <QTextCodec>
 #include <QDebug>
+#include <QRegExp>
+
+
 //lite_memory_check_begin
 #if defined(WIN32) && defined(_MSC_VER) &&  defined(_DEBUG)
      #define _CRTDBG_MAP_ALLOC
@@ -360,7 +363,7 @@ void DlvDebugger::runToLine(const QString &fileName, int line)
 
 void DlvDebugger::createWatch(const QString &var)
 {
-    QString cmd = "vars "+QRegExp::escape(var);
+    QString cmd = "vars "+ QRegExp::escape(var);
     m_updateCmdHistroy.push_back(cmd);
     command_helper(cmd.toUtf8(),true);
 }
@@ -579,7 +582,7 @@ void DlvDebugger::handleResponse(const QByteArray &buff)
     //> qlang.io/qlang%2espec%2ev1.Import()
     //> main.main() goapi/_test/_testmain.go:50 (hits goroutine(1):1 total:1) (PC: 0x4011ca)
     if (buff.contains("> ")) {
-        static QRegExp reg(">(\\s+\\[[\\w\\d]+\\])?\\s+([\\w\\d_\\.\\%\\*\\(\\)\\/]+)\\(\\)\\s+((?:[a-zA-Z]:)?[\\w\\d_@\\s\\-\\/\\.\\\\]+):(\\d+)\\s?(.*)\\s?(\\(PC:\\s+.*)");
+        static  QRegExp reg(">(\\s+\\[[\\w\\d]+\\])?\\s+([\\w\\d_\\.\\%\\*\\(\\)\\/]+)\\(\\)\\s+((?:[a-zA-Z]:)?[\\w\\d_@\\s\\-\\/\\.\\\\]+):(\\d+)\\s?(.*)\\s?(\\(PC:\\s+.*)");
         int n = reg.indexIn(QString::fromUtf8(buff));
         if (n < 0) {
             return;
