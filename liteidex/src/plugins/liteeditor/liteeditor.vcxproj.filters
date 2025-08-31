@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="codecompleter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editorapimanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="faketooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="functiontooltip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="highlightermanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="katehighlighterfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="katetextlexer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litecompleter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditorfile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditorfilefactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditormark.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditoroption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditoroptionfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditorplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditorwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteeditorwidgetbase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litewordcompleter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="snippetapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="wordapi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="codecompleter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="editorapimanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="faketooltip.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="functiontooltip.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="highlightermanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="katehighlighterfactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="katetextlexer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="litecompleter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteeditor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="liteeditor_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="liteeditorfile.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteeditorfilefactory.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteeditormark.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteeditoroption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="liteeditoroptionfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="liteeditorplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteeditorwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteeditorwidgetbase.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <CustomBuild Include="..\..\pch\liteide_gui_pch.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <QtMoc Include="litewordcompleter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="snippetapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wordapi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pch\liteide_gui_pch.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="liteeditoroption.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\copy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\exporthtml.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\exportpdf.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fileprint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fileprintpreview.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\findword.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\func.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\goto.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\keyword.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="liteeditor.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\lock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\paste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\redo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\snippet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\unlock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

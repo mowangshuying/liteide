@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="build.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildconfigdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="buildmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litebuild.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litebuildoption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litebuildoptionfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="litebuildplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="build.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="buildconfigdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="buildmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="litebuild.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="litebuild_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="litebuildoption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="litebuildoptionfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="litebuildplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <CustomBuild Include="..\..\pch\liteide_gui_pch.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pch\liteide_gui_pch.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="buildconfigdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="litebuildoption.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\bk.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\build.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\buildall.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\builddebug.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\buildrun.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\buildtest.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\clean.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cleanall.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\config.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\debug.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\doc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\download.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\filebuild.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\filerun.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\filetest.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fmt.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\get.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gopm.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\graph.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\install.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\lint.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="litebuild.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\module.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\rebuild.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\reget.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\run.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\runterm.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\stopaction.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\test.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\testbench.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\testcover.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\tidy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\update.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\utils.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\ver.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\vet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

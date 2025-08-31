@@ -1,0 +1,143 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fileutil", "D:/liteide-Master/liteidex/src/utils/fileutil\fileutil.vcxproj", "{387C6E2F-5690-372F-B40F-DB34B19E4C9F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "mimetype", "D:/liteide-Master/liteidex/src/utils/mimetype\mimetype.vcxproj", "{CA42BE12-0583-3969-9B07-8493F2A0A374}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "extension", "D:/liteide-Master/liteidex/src/utils/extension\extension.vcxproj", "{6FE1F1AD-3557-3343-9934-4C185C14B86D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "textoutput", "D:/liteide-Master/liteidex/src/utils/textoutput\textoutput.vcxproj", "{2D4DBCEF-6055-3522-B246-2DBEBDE9B284}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA} = {9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "symboltreeview", "D:/liteide-Master/liteidex/src/utils/symboltreeview\symboltreeview.vcxproj", "{7B73EE5C-AFFE-3685-9A38-7045BD317EF1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "modelproject", "D:/liteide-Master/liteidex/src/utils/modelproject\modelproject.vcxproj", "{B58F850C-B13E-3C78-8DFB-2D5B13067823}"
+	ProjectSection(ProjectDependencies) = postProject
+		{387C6E2F-5690-372F-B40F-DB34B19E4C9F} = {387C6E2F-5690-372F-B40F-DB34B19E4C9F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "processex", "D:/liteide-Master/liteidex/src/utils/processex\processex.vcxproj", "{1E3C9C43-2296-3D8C-8AAF-6E499D4517FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "colorstyle", "D:/liteide-Master/liteidex/src/utils/colorstyle\colorstyle.vcxproj", "{9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "documentbrowser", "D:/liteide-Master/liteidex/src/utils/documentbrowser\documentbrowser.vcxproj", "{C582BF0C-6241-3E4D-9AAA-5743349EFF63}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6FE1F1AD-3557-3343-9934-4C185C14B86D} = {6FE1F1AD-3557-3343-9934-4C185C14B86D}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "htmlutil", "D:/liteide-Master/liteidex/src/utils/htmlutil\htmlutil.vcxproj", "{832F568A-1F41-3269-8473-A95835961094}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "golangapi", "D:/liteide-Master/liteidex/src/utils/golangapi\golangapi.vcxproj", "{7537EB52-7BB3-3E38-8F5A-CED45AB97CC8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "filesystem", "D:/liteide-Master/liteidex/src/utils/filesystem\filesystem.vcxproj", "{5403CEDF-81D7-32A9-84F9-D20A8E2F47BE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B73EE5C-AFFE-3685-9A38-7045BD317EF1} = {7B73EE5C-AFFE-3685-9A38-7045BD317EF1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "editorutil", "D:/liteide-Master/liteidex/src/utils/editorutil\editorutil.vcxproj", "{E69B1565-D8E2-3D75-8353-162B5D4F6D14}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "folderview", "D:/liteide-Master/liteidex/src/utils/folderview\folderview.vcxproj", "{C162F47E-B1CC-33E3-9094-9BCEA44C6377}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B73EE5C-AFFE-3685-9A38-7045BD317EF1} = {7B73EE5C-AFFE-3685-9A38-7045BD317EF1}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "iconutil", "D:/liteide-Master/liteidex/src/utils/iconutil\iconutil.vcxproj", "{4BBF87D5-C1EE-3638-8C23-0D719CFB4E44}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "dlvclient", "D:/liteide-Master/liteidex/src/utils/dlvclient\dlvclient.vcxproj", "{E29ABCEE-3A95-3586-9E22-64209D8A2D70}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "navigate", "D:/liteide-Master/liteidex/src/utils/navigate\navigate.vcxproj", "{9331EA08-E9BD-3F70-BE3D-AD306A7E5DFD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tabwidget", "D:/liteide-Master/liteidex/src/utils/tabwidget\tabwidget.vcxproj", "{C2D43894-8A8F-3821-BE7D-012DB4FCCBC9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vtermwidget", "D:/liteide-Master/liteidex/src/utils/vterm\vtermwidget.vcxproj", "{E96873D4-A220-340C-B106-94DC19663C2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{387C6E2F-5690-372F-B40F-DB34B19E4C9F}.Debug|x64.ActiveCfg = Debug|x64
+		{387C6E2F-5690-372F-B40F-DB34B19E4C9F}.Debug|x64.Build.0 = Debug|x64
+		{387C6E2F-5690-372F-B40F-DB34B19E4C9F}.Release|x64.ActiveCfg = Release|x64
+		{387C6E2F-5690-372F-B40F-DB34B19E4C9F}.Release|x64.Build.0 = Release|x64
+		{CA42BE12-0583-3969-9B07-8493F2A0A374}.Debug|x64.ActiveCfg = Debug|x64
+		{CA42BE12-0583-3969-9B07-8493F2A0A374}.Debug|x64.Build.0 = Debug|x64
+		{CA42BE12-0583-3969-9B07-8493F2A0A374}.Release|x64.ActiveCfg = Release|x64
+		{CA42BE12-0583-3969-9B07-8493F2A0A374}.Release|x64.Build.0 = Release|x64
+		{6FE1F1AD-3557-3343-9934-4C185C14B86D}.Debug|x64.ActiveCfg = Debug|x64
+		{6FE1F1AD-3557-3343-9934-4C185C14B86D}.Debug|x64.Build.0 = Debug|x64
+		{6FE1F1AD-3557-3343-9934-4C185C14B86D}.Release|x64.ActiveCfg = Release|x64
+		{6FE1F1AD-3557-3343-9934-4C185C14B86D}.Release|x64.Build.0 = Release|x64
+		{2D4DBCEF-6055-3522-B246-2DBEBDE9B284}.Debug|x64.ActiveCfg = Debug|x64
+		{2D4DBCEF-6055-3522-B246-2DBEBDE9B284}.Debug|x64.Build.0 = Debug|x64
+		{2D4DBCEF-6055-3522-B246-2DBEBDE9B284}.Release|x64.ActiveCfg = Release|x64
+		{2D4DBCEF-6055-3522-B246-2DBEBDE9B284}.Release|x64.Build.0 = Release|x64
+		{7B73EE5C-AFFE-3685-9A38-7045BD317EF1}.Debug|x64.ActiveCfg = Debug|x64
+		{7B73EE5C-AFFE-3685-9A38-7045BD317EF1}.Debug|x64.Build.0 = Debug|x64
+		{7B73EE5C-AFFE-3685-9A38-7045BD317EF1}.Release|x64.ActiveCfg = Release|x64
+		{7B73EE5C-AFFE-3685-9A38-7045BD317EF1}.Release|x64.Build.0 = Release|x64
+		{B58F850C-B13E-3C78-8DFB-2D5B13067823}.Debug|x64.ActiveCfg = Debug|x64
+		{B58F850C-B13E-3C78-8DFB-2D5B13067823}.Debug|x64.Build.0 = Debug|x64
+		{B58F850C-B13E-3C78-8DFB-2D5B13067823}.Release|x64.ActiveCfg = Release|x64
+		{B58F850C-B13E-3C78-8DFB-2D5B13067823}.Release|x64.Build.0 = Release|x64
+		{1E3C9C43-2296-3D8C-8AAF-6E499D4517FB}.Debug|x64.ActiveCfg = Debug|x64
+		{1E3C9C43-2296-3D8C-8AAF-6E499D4517FB}.Debug|x64.Build.0 = Debug|x64
+		{1E3C9C43-2296-3D8C-8AAF-6E499D4517FB}.Release|x64.ActiveCfg = Release|x64
+		{1E3C9C43-2296-3D8C-8AAF-6E499D4517FB}.Release|x64.Build.0 = Release|x64
+		{9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA}.Debug|x64.ActiveCfg = Debug|x64
+		{9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA}.Debug|x64.Build.0 = Debug|x64
+		{9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA}.Release|x64.ActiveCfg = Release|x64
+		{9F4AE099-EF8E-31EA-9EF1-0BAFAF1D2BEA}.Release|x64.Build.0 = Release|x64
+		{C582BF0C-6241-3E4D-9AAA-5743349EFF63}.Debug|x64.ActiveCfg = Debug|x64
+		{C582BF0C-6241-3E4D-9AAA-5743349EFF63}.Debug|x64.Build.0 = Debug|x64
+		{C582BF0C-6241-3E4D-9AAA-5743349EFF63}.Release|x64.ActiveCfg = Release|x64
+		{C582BF0C-6241-3E4D-9AAA-5743349EFF63}.Release|x64.Build.0 = Release|x64
+		{832F568A-1F41-3269-8473-A95835961094}.Debug|x64.ActiveCfg = Debug|x64
+		{832F568A-1F41-3269-8473-A95835961094}.Debug|x64.Build.0 = Debug|x64
+		{832F568A-1F41-3269-8473-A95835961094}.Release|x64.ActiveCfg = Release|x64
+		{832F568A-1F41-3269-8473-A95835961094}.Release|x64.Build.0 = Release|x64
+		{7537EB52-7BB3-3E38-8F5A-CED45AB97CC8}.Debug|x64.ActiveCfg = Debug|x64
+		{7537EB52-7BB3-3E38-8F5A-CED45AB97CC8}.Debug|x64.Build.0 = Debug|x64
+		{7537EB52-7BB3-3E38-8F5A-CED45AB97CC8}.Release|x64.ActiveCfg = Release|x64
+		{7537EB52-7BB3-3E38-8F5A-CED45AB97CC8}.Release|x64.Build.0 = Release|x64
+		{5403CEDF-81D7-32A9-84F9-D20A8E2F47BE}.Debug|x64.ActiveCfg = Debug|x64
+		{5403CEDF-81D7-32A9-84F9-D20A8E2F47BE}.Debug|x64.Build.0 = Debug|x64
+		{5403CEDF-81D7-32A9-84F9-D20A8E2F47BE}.Release|x64.ActiveCfg = Release|x64
+		{5403CEDF-81D7-32A9-84F9-D20A8E2F47BE}.Release|x64.Build.0 = Release|x64
+		{E69B1565-D8E2-3D75-8353-162B5D4F6D14}.Debug|x64.ActiveCfg = Debug|x64
+		{E69B1565-D8E2-3D75-8353-162B5D4F6D14}.Debug|x64.Build.0 = Debug|x64
+		{E69B1565-D8E2-3D75-8353-162B5D4F6D14}.Release|x64.ActiveCfg = Release|x64
+		{E69B1565-D8E2-3D75-8353-162B5D4F6D14}.Release|x64.Build.0 = Release|x64
+		{C162F47E-B1CC-33E3-9094-9BCEA44C6377}.Debug|x64.ActiveCfg = Debug|x64
+		{C162F47E-B1CC-33E3-9094-9BCEA44C6377}.Debug|x64.Build.0 = Debug|x64
+		{C162F47E-B1CC-33E3-9094-9BCEA44C6377}.Release|x64.ActiveCfg = Release|x64
+		{C162F47E-B1CC-33E3-9094-9BCEA44C6377}.Release|x64.Build.0 = Release|x64
+		{4BBF87D5-C1EE-3638-8C23-0D719CFB4E44}.Debug|x64.ActiveCfg = Debug|x64
+		{4BBF87D5-C1EE-3638-8C23-0D719CFB4E44}.Debug|x64.Build.0 = Debug|x64
+		{4BBF87D5-C1EE-3638-8C23-0D719CFB4E44}.Release|x64.ActiveCfg = Release|x64
+		{4BBF87D5-C1EE-3638-8C23-0D719CFB4E44}.Release|x64.Build.0 = Release|x64
+		{E29ABCEE-3A95-3586-9E22-64209D8A2D70}.Debug|x64.ActiveCfg = Debug|x64
+		{E29ABCEE-3A95-3586-9E22-64209D8A2D70}.Debug|x64.Build.0 = Debug|x64
+		{E29ABCEE-3A95-3586-9E22-64209D8A2D70}.Release|x64.ActiveCfg = Release|x64
+		{E29ABCEE-3A95-3586-9E22-64209D8A2D70}.Release|x64.Build.0 = Release|x64
+		{9331EA08-E9BD-3F70-BE3D-AD306A7E5DFD}.Debug|x64.ActiveCfg = Debug|x64
+		{9331EA08-E9BD-3F70-BE3D-AD306A7E5DFD}.Debug|x64.Build.0 = Debug|x64
+		{9331EA08-E9BD-3F70-BE3D-AD306A7E5DFD}.Release|x64.ActiveCfg = Release|x64
+		{9331EA08-E9BD-3F70-BE3D-AD306A7E5DFD}.Release|x64.Build.0 = Release|x64
+		{C2D43894-8A8F-3821-BE7D-012DB4FCCBC9}.Debug|x64.ActiveCfg = Debug|x64
+		{C2D43894-8A8F-3821-BE7D-012DB4FCCBC9}.Debug|x64.Build.0 = Debug|x64
+		{C2D43894-8A8F-3821-BE7D-012DB4FCCBC9}.Release|x64.ActiveCfg = Release|x64
+		{C2D43894-8A8F-3821-BE7D-012DB4FCCBC9}.Release|x64.Build.0 = Release|x64
+		{E96873D4-A220-340C-B106-94DC19663C2E}.Debug|x64.ActiveCfg = Debug|x64
+		{E96873D4-A220-340C-B106-94DC19663C2E}.Debug|x64.Build.0 = Debug|x64
+		{E96873D4-A220-340C-B106-94DC19663C2E}.Release|x64.ActiveCfg = Release|x64
+		{E96873D4-A220-340C-B106-94DC19663C2E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

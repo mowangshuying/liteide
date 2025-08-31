@@ -1,0 +1,119 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liteapi", "D:/liteide-Master/liteidex/src/api/liteapi\liteapi.vcxproj", "{479E0212-570E-3778-B5F1-1FA964A498C9}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liteenvapi", "D:/liteide-Master/liteidex/src/api/liteenvapi\liteenvapi.vcxproj", "{6415D758-91BC-3EA9-B9B4-7A728A1B3CB4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "litefindapi", "D:/liteide-Master/liteidex/src/api/litefindapi\litefindapi.vcxproj", "{A8FC7587-28AF-396B-9DCA-23ED238A5D35}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "litebuildapi", "D:/liteide-Master/liteidex/src/api/litebuildapi\litebuildapi.vcxproj", "{21ED6EF3-03A6-3D96-BDB3-7EB8A421E4E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "liteeditorapi", "D:/liteide-Master/liteidex/src/api/liteeditorapi\liteeditorapi.vcxproj", "{14829BAB-21BA-3F3A-A8D4-C7A574BC88AC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "litedebugapi", "D:/liteide-Master/liteidex/src/api/litedebugapi\litedebugapi.vcxproj", "{A7203960-4A03-3C8A-A059-EAE81AD030E9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "litettyapi", "D:/liteide-Master/liteidex/src/api/litettyapi\litettyapi.vcxproj", "{A0E9139E-67DD-3C52-88E2-5212FA8B36DF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "docbrowserapi", "D:/liteide-Master/liteidex/src/api/docbrowserapi\docbrowserapi.vcxproj", "{CC127491-2644-3DFE-984F-B1AACF8540F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "golangdocapi", "D:/liteide-Master/liteidex/src/api/golangdocapi\golangdocapi.vcxproj", "{72BC3700-F9BA-3102-A05C-EF9E792127E1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "golangastapi", "D:/liteide-Master/liteidex/src/api/golangastapi\golangastapi.vcxproj", "{DBE711C6-1AE3-30CE-82C3-B6413B399362}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "quickopenapi", "D:/liteide-Master/liteidex/src/api/quickopenapi\quickopenapi.vcxproj", "{9C243174-72B6-3301-8ACB-2468A6F832D6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "terminalapi", "D:/liteide-Master/liteidex/src/api/terminalapi\terminalapi.vcxproj", "{AD19C87C-2EF4-3972-93D5-484B25A56851}"
+	ProjectSection(ProjectDependencies) = postProject
+		{479E0212-570E-3778-B5F1-1FA964A498C9} = {479E0212-570E-3778-B5F1-1FA964A498C9}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{479E0212-570E-3778-B5F1-1FA964A498C9}.Debug|x64.ActiveCfg = Debug|x64
+		{479E0212-570E-3778-B5F1-1FA964A498C9}.Debug|x64.Build.0 = Debug|x64
+		{479E0212-570E-3778-B5F1-1FA964A498C9}.Release|x64.ActiveCfg = Release|x64
+		{479E0212-570E-3778-B5F1-1FA964A498C9}.Release|x64.Build.0 = Release|x64
+		{6415D758-91BC-3EA9-B9B4-7A728A1B3CB4}.Debug|x64.ActiveCfg = Debug|x64
+		{6415D758-91BC-3EA9-B9B4-7A728A1B3CB4}.Debug|x64.Build.0 = Debug|x64
+		{6415D758-91BC-3EA9-B9B4-7A728A1B3CB4}.Release|x64.ActiveCfg = Release|x64
+		{6415D758-91BC-3EA9-B9B4-7A728A1B3CB4}.Release|x64.Build.0 = Release|x64
+		{A8FC7587-28AF-396B-9DCA-23ED238A5D35}.Debug|x64.ActiveCfg = Debug|x64
+		{A8FC7587-28AF-396B-9DCA-23ED238A5D35}.Debug|x64.Build.0 = Debug|x64
+		{A8FC7587-28AF-396B-9DCA-23ED238A5D35}.Release|x64.ActiveCfg = Release|x64
+		{A8FC7587-28AF-396B-9DCA-23ED238A5D35}.Release|x64.Build.0 = Release|x64
+		{21ED6EF3-03A6-3D96-BDB3-7EB8A421E4E9}.Debug|x64.ActiveCfg = Debug|x64
+		{21ED6EF3-03A6-3D96-BDB3-7EB8A421E4E9}.Debug|x64.Build.0 = Debug|x64
+		{21ED6EF3-03A6-3D96-BDB3-7EB8A421E4E9}.Release|x64.ActiveCfg = Release|x64
+		{21ED6EF3-03A6-3D96-BDB3-7EB8A421E4E9}.Release|x64.Build.0 = Release|x64
+		{14829BAB-21BA-3F3A-A8D4-C7A574BC88AC}.Debug|x64.ActiveCfg = Debug|x64
+		{14829BAB-21BA-3F3A-A8D4-C7A574BC88AC}.Debug|x64.Build.0 = Debug|x64
+		{14829BAB-21BA-3F3A-A8D4-C7A574BC88AC}.Release|x64.ActiveCfg = Release|x64
+		{14829BAB-21BA-3F3A-A8D4-C7A574BC88AC}.Release|x64.Build.0 = Release|x64
+		{A7203960-4A03-3C8A-A059-EAE81AD030E9}.Debug|x64.ActiveCfg = Debug|x64
+		{A7203960-4A03-3C8A-A059-EAE81AD030E9}.Debug|x64.Build.0 = Debug|x64
+		{A7203960-4A03-3C8A-A059-EAE81AD030E9}.Release|x64.ActiveCfg = Release|x64
+		{A7203960-4A03-3C8A-A059-EAE81AD030E9}.Release|x64.Build.0 = Release|x64
+		{A0E9139E-67DD-3C52-88E2-5212FA8B36DF}.Debug|x64.ActiveCfg = Debug|x64
+		{A0E9139E-67DD-3C52-88E2-5212FA8B36DF}.Debug|x64.Build.0 = Debug|x64
+		{A0E9139E-67DD-3C52-88E2-5212FA8B36DF}.Release|x64.ActiveCfg = Release|x64
+		{A0E9139E-67DD-3C52-88E2-5212FA8B36DF}.Release|x64.Build.0 = Release|x64
+		{CC127491-2644-3DFE-984F-B1AACF8540F4}.Debug|x64.ActiveCfg = Debug|x64
+		{CC127491-2644-3DFE-984F-B1AACF8540F4}.Debug|x64.Build.0 = Debug|x64
+		{CC127491-2644-3DFE-984F-B1AACF8540F4}.Release|x64.ActiveCfg = Release|x64
+		{CC127491-2644-3DFE-984F-B1AACF8540F4}.Release|x64.Build.0 = Release|x64
+		{72BC3700-F9BA-3102-A05C-EF9E792127E1}.Debug|x64.ActiveCfg = Debug|x64
+		{72BC3700-F9BA-3102-A05C-EF9E792127E1}.Debug|x64.Build.0 = Debug|x64
+		{72BC3700-F9BA-3102-A05C-EF9E792127E1}.Release|x64.ActiveCfg = Release|x64
+		{72BC3700-F9BA-3102-A05C-EF9E792127E1}.Release|x64.Build.0 = Release|x64
+		{DBE711C6-1AE3-30CE-82C3-B6413B399362}.Debug|x64.ActiveCfg = Debug|x64
+		{DBE711C6-1AE3-30CE-82C3-B6413B399362}.Debug|x64.Build.0 = Debug|x64
+		{DBE711C6-1AE3-30CE-82C3-B6413B399362}.Release|x64.ActiveCfg = Release|x64
+		{DBE711C6-1AE3-30CE-82C3-B6413B399362}.Release|x64.Build.0 = Release|x64
+		{9C243174-72B6-3301-8ACB-2468A6F832D6}.Debug|x64.ActiveCfg = Debug|x64
+		{9C243174-72B6-3301-8ACB-2468A6F832D6}.Debug|x64.Build.0 = Debug|x64
+		{9C243174-72B6-3301-8ACB-2468A6F832D6}.Release|x64.ActiveCfg = Release|x64
+		{9C243174-72B6-3301-8ACB-2468A6F832D6}.Release|x64.Build.0 = Release|x64
+		{AD19C87C-2EF4-3972-93D5-484B25A56851}.Debug|x64.ActiveCfg = Debug|x64
+		{AD19C87C-2EF4-3972-93D5-484B25A56851}.Debug|x64.Build.0 = Debug|x64
+		{AD19C87C-2EF4-3972-93D5-484B25A56851}.Release|x64.ActiveCfg = Release|x64
+		{AD19C87C-2EF4-3972-93D5-484B25A56851}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

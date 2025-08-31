@@ -1,0 +1,20 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "json", "D:/liteide-Master/liteidex/src/3rdparty/qjson/src\json.vcxproj", "{DF4DDFBB-2800-3278-86A7-F1EC13452F8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF4DDFBB-2800-3278-86A7-F1EC13452F8D}.Debug|x64.ActiveCfg = Debug|x64
+		{DF4DDFBB-2800-3278-86A7-F1EC13452F8D}.Debug|x64.Build.0 = Debug|x64
+		{DF4DDFBB-2800-3278-86A7-F1EC13452F8D}.Release|x64.ActiveCfg = Release|x64
+		{DF4DDFBB-2800-3278-86A7-F1EC13452F8D}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

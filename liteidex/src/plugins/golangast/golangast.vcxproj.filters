@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="astwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golangast.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golangasticon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golangastoption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golangastoptionfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golangastplugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="golangsymbol.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="astwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="golangast.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="golangast_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="golangasticon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="golangastitem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="golangastoption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="golangastoptionfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="golangastplugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="golangsymbol.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <CustomBuild Include="..\..\pch\liteide_gui_pch.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\pch\liteide_gui_pch.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="golangastoption.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\const.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\const_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\consts.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\file.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\func.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\func_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\funcs.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gofile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="golangast.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\import.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\imports.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\interface.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\interface_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\makefile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\package.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\project.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\struct.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\struct_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\todo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\todos.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_factor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_factor_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_method.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_method_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_var.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\type_var_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\var.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\var_p.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\vars.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,479 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aboutdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="actionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="editormanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="filemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="folderproject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="folderprojectfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="goproxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="htmlwidgetmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="idletimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteapp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteappoption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="liteappoptionfactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mimetypemanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="multifolderwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="newfiledialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="openeditorswidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="optionsbrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="outputoption.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pluginmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pluginsdialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="projectmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="recentmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rotationtoolbutton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sidewindowstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="splitfolderwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="splitwindowstyle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="textbrowserhtmlwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tooldockwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolmainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="toolwindowmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="aboutdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="actionmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="cdrv.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="editormanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="filemanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="folderproject.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="folderprojectfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="goproxy.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="htmlwidgetmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="idletimer.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="liteapp.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="liteapp_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="liteappoption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="liteappoptionfactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="..\pch\liteide_gui_pch.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <QtMoc Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="mimetypemanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="multifolderwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="newfiledialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="openeditorswidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="optionmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="optionsbrowser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="outputoption.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="pluginmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="pluginsdialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="projectmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="recentmanager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="rotationtoolbutton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="sidewindowstyle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="splitfolderwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="splitwindowstyle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="textbrowserhtmlwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tooldockwidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="toolmainwindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClInclude Include="toolwindowmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="windowstyle.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\pch\liteide_gui_pch.h.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="aboutdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="liteappoption.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="newfiledialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="optionswidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="outputoption.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="pluginsdialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\addpage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\backward.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cleanoutput.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\closefile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\closepage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\closeproject.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\closetab.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\config.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\copy.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\cut.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\darkclosebutton.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\dui.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\editclear.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\fileitem.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\filter.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\folderitem.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\forward.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\gen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\godoc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gopath.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\gopher.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hideoutput.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hidesidebar.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\hidetool.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\home.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\kan.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\kun.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\li.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\listpage.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="liteapp.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <None Include="images\liteide-logo128.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide-logo64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide128.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide16.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide24.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide32.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide48.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\liteide64.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\lock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\movemenu.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\new.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\openfile.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\openfolder.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\openproject.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\options.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\paste.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\projectitem.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\qian.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\redo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\reload.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\save.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\saveall.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\saveproject.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\setup.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\space.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\sync.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\undo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\unlock.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\xun.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="images\logo\zhen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="liteapp.rc" />
+  </ItemGroup>
+</Project>

@@ -36,3 +36,18 @@ liteidex/src/golang.org/
 
 #macosx
 .DS_Store
+
+#VS2022
+liteidex/.vs/*
+*.obj
+*.tlog
+*.recipe
+*.cbt
+*.log
+*.pch
+*.qtvscr
+*.user
+*.moc
+*.natvis
+*.pdb
+
