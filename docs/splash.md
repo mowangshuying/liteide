@@ -6,4 +6,4 @@
   * 3/5 内容
   * message显示在左下脚
 * showmessage
-* qApp->processEvent
+* qApp->processEvent.
