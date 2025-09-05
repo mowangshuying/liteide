@@ -376,6 +376,7 @@ echo #include "liteide_gui_pch.h"&gt;&gt;..\pch\liteide_gui_pch.h.cpp</Command>
     <QtUic Include="pluginsdialog.ui" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="images\addpage.png" />
     <None Include="images\backward.png" />
     <None Include="images\cleanoutput.png" />

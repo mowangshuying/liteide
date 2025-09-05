@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -47,8 +47,8 @@ SideDockWidget::SideDockWidget(QSize iconSize, QWidget *parent) :
 void SideDockWidget::createMenu(Qt::DockWidgetArea area)
 {
     m_area = area;
-    m_moveMenu = new QMenu(tr("Move To"),this);
-
+    
+    m_moveMenu = new QMenu(tr("Move To"), this);
     QAction *sideAct = new QAction(this);
     if (area == Qt::LeftDockWidgetArea) {
         sideAct->setText(tr("RightSideBar"));
@@ -65,6 +65,7 @@ void SideDockWidget::createMenu(Qt::DockWidgetArea area)
     m_moveMenu->addAction(outAct);
     connect(sideAct,SIGNAL(triggered()),this,SLOT(moveAction()));
     connect(outAct,SIGNAL(triggered()),this,SLOT(moveAction()));
+
 
     m_menu = new QMenu(this);
 
@@ -203,7 +204,9 @@ SideActionBar::~SideActionBar()
 void SideActionBar::addAction(QAction *action, QWidget *widget, const QString &id, const QString &title, QList<QAction *> widgetActions, QList<QWidget *> widgetList)
 {
     RotationToolButton *btn = new RotationToolButton;
-    btn->setDefaultAction(action);    
+    btn->setDefaultAction(action);
+
+    //QString text = btn->text();
     if (m_area == Qt::LeftDockWidgetArea) {
         btn->setRotation(RotationToolButton::CounterClockwise);
     } else if (m_area == Qt::RightDockWidgetArea) {
@@ -782,14 +785,19 @@ void SideWindowStyle::moveActionTo(Qt::DockWidgetArea from, Qt::DockWidgetArea t
 
 QAction *SideWindowStyle::findToolWindow(QWidget *widget)
 {
+    // 左部工具栏
     QAction *act = m_leftSideBar->findToolAction(widget);
     if (act) {
         return act;
     }
+
+    // 右部工具栏
     act = m_rightSideBar->findToolAction(widget);
     if (act) {
         return act;
     }
+
+    // 底部工具栏
     return m_outputBar->findToolAction(widget);
 }
 
@@ -832,6 +840,11 @@ QAction *SideWindowStyle::addToolWindow(LiteApi::IApplication *app, Qt::DockWidg
         action->setText(title);
         if ((index <= 9) && m_useShortcuts) {
             action->setText(QString("%1: %2").arg(index).arg(title));
+
+#ifdef _DEBUG
+            qDebug() << "action text:" << action->text();
+#endif
+
             //QKeySequence ks(LiteApi::UseMacShortcuts?QString("Ctrl+Alt+%1").arg(index):QString("Ctrl+Alt+%1").arg(index));
             QKeySequence ks(QString("Ctrl+Alt+%1").arg(index));
             LiteApi::IActionContext *actionContext = app->actionManager()->getActionContext(app,"App");

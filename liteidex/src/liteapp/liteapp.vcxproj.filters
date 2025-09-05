@@ -472,6 +472,7 @@
     <None Include="images\logo\zhen.png">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="ClassDiagram.cd" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="liteapp.rc" />
