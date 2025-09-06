@@ -554,7 +554,7 @@ SideWindowStyle::SideWindowStyle(LiteApi::IApplication *app, QMainWindow *window
     QToolButton *btn = new QToolButton;
     btn->setDefaultAction(m_hideSideAct);
     btn->setStyleSheet("QToolButton {border:0}"
-                       "QToolButton:checked {background : qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0, stop:0 rgba(55, 57, 59, 255), stop:1 rgba(255, 255, 255, 255));}");
+                       "QToolButton:checked {background : rgb(0,108,190);}");
     m_statusBar->addWidget(btn);
 
     m_statusBar->setContentsMargins(0,0,0,0);
@@ -562,7 +562,6 @@ SideWindowStyle::SideWindowStyle(LiteApi::IApplication *app, QMainWindow *window
     m_statusBar->addWidget(m_outputBar->toolBar(),1);
 
     m_mainWindow->setStatusBar(m_statusBar);
-    //m_mainWindow->addToolBar(Qt::BottomToolBarArea,m_outputBar->toolBar);
 
     m_sideMenu = 0;
     m_outputMenu = 0;

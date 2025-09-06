@@ -830,6 +830,7 @@ void LiteEditorWidgetBase::drawFoldingMarker(QPainter *painter, const QPalette&,
         // down arrow
         a.setPoints(3, 0, sqsize/3,  sqsize/2, sqsize  - sqsize/3,  sqsize, sqsize/3);
         //a.setPoints(3, 1, sqsize/2+sqsize/3,  sqsize/2+sqsize/3, sqsize/2+sqsize/3,sqsize/2+sqsize/3,1);
+
     } else {
         // right arrow
         a.setPoints(3, sqsize - sqsize/3, sqsize/2,  sqsize/2 - sqsize/3, 0,  sqsize/2 - sqsize/3, sqsize);
