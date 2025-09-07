@@ -363,6 +363,7 @@ QScrollBar:down-arrow:vertical {
 /* === QScrollBar:horizontal === */
 QScrollBar:horizontal {
     background: rgb(245, 245, 245);
+    border: 1px solid rgb(204, 206, 219);
     height: 16px;
     margin: 0 16px 0 16px;
 }
@@ -392,7 +393,7 @@ QScrollBar::add-page:horizontal, QScrollBar::sub-page:horizontal {
 }
 
 QScrollBar:left-arrow:horizontal{
-    border: none;
+    /* border: none; */
     width: 15px;
     height: 15px;
     background: rgb(245, 245, 245);
@@ -407,7 +408,7 @@ QScrollBar:left-arrow:horizontal{
 }
 
 QScrollBar:right-arrow:horizontal {
-    border: none;
+    /* border: none; */
     width: 15px;
     height: 15px;
     background: rgb(245, 245, 245);
