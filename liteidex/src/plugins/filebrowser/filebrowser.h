@@ -1,4 +1,4 @@
-/**************************************************************************
+﻿/**************************************************************************
 ** This file is part of LiteIDE
 **
 ** Copyright (c) 2011-2019 LiteIDE. All rights reserved.
@@ -60,7 +60,7 @@ protected:
 protected:
     LiteApi::IApplication   *m_liteApp;
     QWidget                 *m_widget;
-    FolderView        *m_folderView;
+    FolderView  *m_folderView;
     QComboBox   *m_rootCombo;
     //QComboBox   *m_filterCombo;
     //QToolBar    *m_filterToolBar;
